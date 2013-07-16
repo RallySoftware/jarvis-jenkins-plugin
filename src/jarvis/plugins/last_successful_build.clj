@@ -7,7 +7,7 @@
         :command "last-successful-build"
         :author "Jonathan Chauncey Matt Farrar"
         :plugin true}
-  last-successful-build [message]
+  last-successful-build [message content-vec]
   (-> message
     (get "content")
     (s/split #"\s")

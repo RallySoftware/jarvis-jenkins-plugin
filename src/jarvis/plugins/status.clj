@@ -10,7 +10,7 @@
         :command "status"
         :author "Jonathan Chauncey and Matt Farrar"
         :plugin true}
-  status [message]
+  status [message content-vec]
   (let [job (get-job message)
         jobs (get-jobs job)
         described-jobs (map #(util/info (% :name ) (get-in % [:lastBuild :number ])) jobs)]

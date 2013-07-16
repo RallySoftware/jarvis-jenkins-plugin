@@ -7,7 +7,7 @@
         :command "build"
         :author "Jonathan Chauncey"
         :plugin true}
-  build [message]
+  build [message content-vec]
   (let [job (-> message
             (get "content")
             (s/split #"\s")

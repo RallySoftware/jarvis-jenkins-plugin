@@ -6,7 +6,7 @@
         :command "health-report"
         :author "Jonathan Chauncey"
         :plugin true}
-  health-report [message]
+  health-report [message content-vec]
   (-> message
     (get "content")
     (s/split #"\s")

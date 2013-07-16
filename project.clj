@@ -1,4 +1,4 @@
-(defproject com.rallydev/jarvis-jenkins-plugin "0.1.1"
+(defproject com.rallydev/jarvis-jenkins-plugin "1.0.0"
   :description "A Jarvis plugin for interacting with jenkins"
   :url "http://github.com/RallySoftware/jarvis-jenkins-plugin"
   :license {:name "The MIT License (MIT)"
