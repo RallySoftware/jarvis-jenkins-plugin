@@ -6,7 +6,7 @@
 
 (declare get-job get-jobs)
 
-(defn ^{:description "status <pipeline> - Determines the status of all downstream jobs from the specified job."
+(defn ^{:description "<pipeline> - Determines the status of all downstream jobs from the specified job."
         :command "status"
         :author "Jonathan Chauncey and Matt Farrar"
         :plugin true}

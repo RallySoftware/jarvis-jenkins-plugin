@@ -3,7 +3,7 @@
             [clj-jenkins.job :as job]
             [clojure.string :as s]))
 
-(defn ^{:description "last-successful-build <job> - Prints the last successful build for the specified job."
+(defn ^{:description "<job> - Prints the last successful build for the specified job."
         :command "last-successful-build"
         :author "Jonathan Chauncey Matt Farrar"
         :plugin true}
