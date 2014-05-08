@@ -2,8 +2,10 @@
   (:require [clj-jenkins.job :as job]
             [clojure.string :as s]))
 
-(defn ^{:description "<job> - Prints the health report for the specified job."
+(defn ^{:description "Prints the health report for the specified job."
         :command "health-report"
+        :params "job"
+        :usage "~health-report MyJob"
         :author "Jonathan Chauncey"
         :plugin true}
   health-report [message content-vec]

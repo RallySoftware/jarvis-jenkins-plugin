@@ -3,8 +3,10 @@
             [clj-jenkins.job :as job]
             [clojure.string :as s]))
 
-(defn ^{:description "<pipeline> - Trigger build pipeline (which may cause a deployment) for specified service."
+(defn ^{:description "Trigger build pipeline (which may cause a deployment) for specified service."
         :command "build"
+        :params "pipeline"
+        :usage "~build MyPipeline"
         :author "Jonathan Chauncey"
         :plugin true}
   build [message content-vec]
